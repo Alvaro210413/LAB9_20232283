@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stf-Puzzle Simplified Version</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Stf-Puzzle Simplified Version</h1>
+
+<div class="panel">
+    <img id="preview" src="img/default.jpg" alt="Personaje">
+    <div class="row">
+        <input type="color" id="color" value="#ffffff" title="Color del tablero">
+        <input type="text" id="dims" value="3x3" placeholder="NxN" autocomplete="off">
+    </div>
+    <small id="dimsError" class="error"></small>
+    <input type="file" id="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png" hidden>
+    <button id="btnSelect" class="btn">Seleccionar Personaje</button>
+</div>
+
+<button id="btnStart" class="btn" hidden>Iniciar el juego</button>
+
+<div id="board" class="board" hidden></div>
+<p id="message" class="message"></p>
+
+<script src="js/app.js"></script>
+</body>
+</html>

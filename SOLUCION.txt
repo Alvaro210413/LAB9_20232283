@@ -1,0 +1,25 @@
+Stf-Puzzle Simplified Version - Solucion del rompecabezas (tablero 3x3)
+Alumno: Pimentel Melgar, Alvaro Brandon - 20232283
+
+Secuencia unica de desordenado (8 pasos), aplicada desde la imagen ordenada.
+Cada letra es el movimiento de la casilla vacia X:
+U (arriba), L (izquierda), U, L, D (abajo), D, R (derecha), R
+
+Tablero ordenado:   12345678X        Tablero desordenado: 41372586X
+
+  1 2 3                                4 1 3
+  4 5 6                                7 2 5
+  7 8 X                                8 6 X
+
+Solucion: hacer clic en estas piezas, en este orden:
+6, 8, 7, 4, 1, 2, 5, 6
+
+Paso a paso (stf_game_board_structure en la BD):
+41372586X -> clic 6 -> 4137258X6
+          -> clic 8 -> 413725X86
+          -> clic 7 -> 413X25786
+          -> clic 4 -> X13425786
+          -> clic 1 -> 1X3425786
+          -> clic 2 -> 1234X5786
+          -> clic 5 -> 12345X786
+          -> clic 6 -> 12345678X  => "Juego terminado !"
